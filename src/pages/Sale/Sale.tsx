@@ -31,7 +31,6 @@ import {
   CloseCircleOutlined,
   CheckCircleOutlined,
   EyeOutlined,
-  CommentOutlined,
 } from "@ant-design/icons"
 import { useAppDispatch, useAppSelector } from "../../shared/hooks/redux"
 import {
@@ -60,7 +59,7 @@ const formatPrice = (price: number) => {
 
 export const Sale: React.FC = () => {
   const dispatch = useAppDispatch()
-  const [searchParams, setSearchParams] = useSearchParams()
+  const [searchParams, _] = useSearchParams()
   const clientIdParam = searchParams.get("clientId")
 
   const { sales, loading } = useAppSelector((state) => state.sale)

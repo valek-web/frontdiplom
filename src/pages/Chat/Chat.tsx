@@ -21,7 +21,6 @@ import {
   SendOutlined,
   UserOutlined,
   TeamOutlined,
-  PlusOutlined,
   LogoutOutlined,
   WechatOutlined,
 } from "@ant-design/icons"
