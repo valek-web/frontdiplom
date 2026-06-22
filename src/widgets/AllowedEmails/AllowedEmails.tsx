@@ -24,17 +24,22 @@ import api from "../../shared/api/axiosInstance"
 
 const PERMISSIONS = [
   "ACCESS_TASKS",
-  "READ_SALES",
-  "WRITE_SALES",
   "READ_POST",
   "WRITE_POST",
   "ACCESS_ADMIN",
+  "ACCESS_CHAT",
+  "ACCESS_SALES",
 ]
+
+// ACCESS_TASKS
+// READ_POST
+// WRITE_POST
+// ACCESS_ADMIN
+// ACCESS_CHAT
+// ACCESS_SALES
 
 const PERMISSION_LABELS: Record<string, string> = {
   ACCESS_TASKS: "Доступ к задачам",
-  READ_SALES: "Просмотр продаж",
-  WRITE_SALES: "Редактирование продаж",
   READ_POST: "Просмотр постов",
   WRITE_POST: "Создание постов",
   ACCESS_ADMIN: "Доступ к админке",
