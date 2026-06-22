@@ -13,7 +13,7 @@ export const useChatSocket = () => {
   useEffect(() => {
     if (!user?.id) return
 
-    const socket = io("http://localhost:3000/chat", {
+    const socket = io("https://api.studio-av.ru/chat", {
       auth: { userId: user.id },
       transports: ["websocket"],
     })

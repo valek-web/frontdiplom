@@ -1,8 +1,7 @@
 import axios, { type AxiosResponse } from "axios"
 
 const api = axios.create({
-  baseURL:
-    import.meta.env.MODE === "production" ? "https://api.studio-av.ru" : "http://localhost:3000", // замените на ваш URL
+  baseURL: "https://api.studio-av.ru", // замените на ваш URL
   headers: { "Content-Type": "application/json" },
 })
 
